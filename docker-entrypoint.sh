@@ -34,4 +34,12 @@ cp /work/uboot-mender/integration-binaries/*.tar* /output
 /usr/local/bin/build-uboot-bbb.sh
 cp /work/beaglebone_black*.tar* /output
 
+# ROCKPro64 eMMC
+/usr/local/bin/build-uboot-rockpro64.sh emmc
+cp /work/rockpro64_*.tar.gz /output
+
+# ROCKPro64 SD
+/usr/local/bin/build-uboot-rockpro64.sh sd
+cp /work/rockpro64_*.tar.gz /output
+
 chown -R --reference /output /output/*
